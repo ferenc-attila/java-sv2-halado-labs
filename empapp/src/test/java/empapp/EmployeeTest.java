@@ -8,6 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.Random.class)
 @DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+@EntityTest
 class EmployeeTest implements PrintNameCapable {
 
     Employee employee;
