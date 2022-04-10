@@ -12,4 +12,12 @@ public class EmployeeService {
     public List<String> listEmployeeNames() {
         return List.of("John Doe", "Jack Doe");
     }
+
+    public void calculateYearlyReport() {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException ie) {
+            throw new IllegalStateException("Interrupted", ie);
+        }
+    }
 }

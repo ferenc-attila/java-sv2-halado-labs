@@ -57,4 +57,12 @@ class EmployeeTest implements PrintNameCapable {
         System.out.println("TC2");
         assertEquals(0, employee.getAge(1970));
     }
+
+    @Test
+    void createWithTooEarlyYearOfBirthTest() {
+        IllegalArgumentException iae = assertThrows(IllegalArgumentException.class,
+                () -> new Employee("John Doe", 1700));
+
+        assertEquals("Year: 1700 too early!", iae.getMessage());
+    }
 }

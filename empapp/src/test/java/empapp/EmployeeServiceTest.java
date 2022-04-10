@@ -2,6 +2,7 @@ package empapp;
 
 import org.junit.jupiter.api.Test;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -28,4 +29,8 @@ class EmployeeServiceTest {
                 .map(Employee::getName).collect(Collectors.toList()), "Employee lists are different");
     }
 
+    @Test
+    void calculateYearlyReportTest() {
+        assertTimeoutPreemptively(Duration.ofSeconds(3), () -> new EmployeeService().calculateYearlyReport());
+    }
 }

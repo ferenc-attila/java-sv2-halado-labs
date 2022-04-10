@@ -9,7 +9,14 @@ public class Employee {
 
     public Employee(String name, int yearOfBirth) {
         this.name = name;
+        validateYearOfBirth(yearOfBirth);
         this.yearOfBirth = yearOfBirth;
+    }
+
+    private void validateYearOfBirth(int yearOfBirth) {
+        if (yearOfBirth < 1800) {
+            throw new IllegalArgumentException("Year: " + yearOfBirth + " too early!");
+        }
     }
 
     public int getAge(int atYear) {
