@@ -1,5 +1,7 @@
 package empapp;
 
+import java.util.Objects;
+
 public class Employee {
 
     private String name;
@@ -13,6 +15,19 @@ public class Employee {
     public int getAge(int atYear) {
         return atYear - yearOfBirth;
     }
+
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        Employee employee = (Employee) o;
+//        return yearOfBirth == employee.yearOfBirth && name.equals(employee.name);
+//    }
+//
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(name, yearOfBirth);
+//    }
 
     public String getName() {
         return name;
