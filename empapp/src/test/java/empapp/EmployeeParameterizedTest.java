@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class EmployeeParameterizedTest {
+class EmployeeParameterizedTest {
 
     @ParameterizedTest//(name = "Get age, year of birth {0}, age {1}")
 //    @ValueSource(ints = {1970, 1980, 1990})

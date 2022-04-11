@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class EmployeeDataDrivenTest {
+class EmployeeDataDrivenTest {
 
     private int[][] values = {{1970, 0}, {1980, 10}, {2000, 30}};
 
