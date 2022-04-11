@@ -33,6 +33,6 @@ class EmployeeServiceTest {
 
     @Test
     void calculateYearlyReportTest() {
-        assertTimeoutPreemptively(Duration.ofSeconds(3), () -> new EmployeeService().calculateYearlyReport());
+        assertTimeoutPreemptively(Duration.ofSeconds(6), () -> new EmployeeService().calculateYearlyReport());
     }
 }
